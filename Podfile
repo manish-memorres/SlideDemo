@@ -8,6 +8,7 @@ target 'SlideDemo' do
   # Pods for SlideDemo
 
   pod 'SideMenu'
+  pod 'Google/Analytics'
 
   target 'SlideDemoTests' do
     inherit! :search_paths

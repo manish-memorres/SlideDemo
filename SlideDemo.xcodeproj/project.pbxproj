@@ -18,6 +18,7 @@
 		790384DE1EB85B5A00223E5D /* SlideDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790384DD1EB85B5A00223E5D /* SlideDemoUITests.swift */; };
 		790384EC1EB85DDB00223E5D /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790384EB1EB85DDB00223E5D /* SideMenuTableViewController.swift */; };
 		7916602D1EB88D1F00D44E88 /* ImageUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7916602C1EB88D1F00D44E88 /* ImageUploadViewController.swift */; };
+		7974A9701EBC4F8F0026B520 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7974A96F1EBC4F8F0026B520 /* GoogleService-Info.plist */; };
 		873E6C256772F1CB510282EC /* Pods_SlideDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C3D0E2CE3E412A559634D9 /* Pods_SlideDemoTests.framework */; };
 		E0807B61A7E05CD23AC89BA3 /* Pods_SlideDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544505F0EAD24DB1885B5AAF /* Pods_SlideDemo.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,8 @@
 		790384DF1EB85B5A00223E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		790384EB1EB85DDB00223E5D /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		7916602C1EB88D1F00D44E88 /* ImageUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUploadViewController.swift; sourceTree = "<group>"; };
+		7974A96F1EBC4F8F0026B520 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7974A9711EBC50260026B520 /* SlideDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		7CBB508DFB9A253106F8DDFB /* Pods_SlideDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		942BFD476391D91640134E64 /* Pods-SlideDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideDemoUITests/Pods-SlideDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A03AB70B70EDCEC932DB0A77 /* Pods-SlideDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideDemoTests/Pods-SlideDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +133,7 @@
 		790384B91EB85B5A00223E5D /* SlideDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7974A96F1EBC4F8F0026B520 /* GoogleService-Info.plist */,
 				790384BA1EB85B5A00223E5D /* AppDelegate.swift */,
 				790384BC1EB85B5A00223E5D /* ViewController.swift */,
 				790384EB1EB85DDB00223E5D /* SideMenuTableViewController.swift */,
@@ -139,6 +143,7 @@
 				790384C61EB85B5A00223E5D /* LaunchScreen.storyboard */,
 				790384C91EB85B5A00223E5D /* Info.plist */,
 				790384C11EB85B5A00223E5D /* SlideDemo.xcdatamodeld */,
+				7974A9711EBC50260026B520 /* SlideDemo-Bridging-Header.h */,
 			);
 			path = SlideDemo;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				790384C81EB85B5A00223E5D /* LaunchScreen.storyboard in Resources */,
+				7974A9701EBC4F8F0026B520 /* GoogleService-Info.plist in Resources */,
 				790384C51EB85B5A00223E5D /* Assets.xcassets in Resources */,
 				790384C01EB85B5A00223E5D /* Main.storyboard in Resources */,
 			);
@@ -616,7 +622,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aj.SlideDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "SlideDemo/SlideDemo-Bridging-Header.h";
+				SWIFT_VERSION = "";
 			};
 			name = Debug;
 		};
@@ -629,7 +636,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aj.SlideDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "SlideDemo/SlideDemo-Bridging-Header.h";
+				SWIFT_VERSION = "";
 			};
 			name = Release;
 		};

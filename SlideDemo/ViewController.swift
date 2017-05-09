@@ -34,9 +34,15 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
         
         self.tableView.tableFooterView = UIView()
-        
+
         setupSideMenu()
         setDefaults()
+        
+        guard let tracker = GAI.sharedInstance().defaultTracker else { return }
+        tracker.set(kGAIScreenName, value: "Map View Controller")
+        
+        guard let builder = GAIDictionaryBuilder.createScreenView() else { return }
+        tracker.send(builder.build() as [NSObject : AnyObject])
     }
 
     override func didReceiveMemoryWarning() {

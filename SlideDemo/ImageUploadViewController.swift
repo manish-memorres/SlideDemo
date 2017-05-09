@@ -24,6 +24,12 @@ class ImageUploadViewController: UIViewController, UIImagePickerControllerDelega
         
         imgPickerChoosePhoto.delegate = self
         
+        guard let tracker = GAI.sharedInstance().defaultTracker else { return }
+        tracker.set(kGAIScreenName, value: "Image Upload View Controller 01")
+        
+        guard let builder = GAIDictionaryBuilder.createScreenView() else { return }
+        tracker.send(builder.build() as [NSObject : AnyObject])
+        
         // Do any additional setup after loading the view.
     }
 
